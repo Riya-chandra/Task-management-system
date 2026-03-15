@@ -8,12 +8,12 @@ import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 
 interface TaskFormProps {
-  task?: Task | null;           // null = create mode, Task = edit mode
+  task?: Task | null;
+  defaultStatus?: TaskStatus;
   onSuccess: () => void;
   onCancel: () => void;
 }
-
-export function TaskForm({ task, onSuccess, onCancel }: TaskFormProps) {
+export function TaskForm({ task, defaultStatus = 'PENDING', onSuccess, onCancel }: TaskFormProps) {
   const isEdit = !!task;
 
   const [title, setTitle] = useState('');
