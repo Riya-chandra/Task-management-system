@@ -98,19 +98,4 @@ During this:
 
 ---
 
-## 🧪 Stretch Goal
-
-(Update this based on what you implemented)
-
-Example:
-
-- Debounced search with highlight  
-OR  
-- Drag and drop with persistence  
-OR  
-- Recurring task logic  
-
----
-
-## 📂 Project Structure
 
