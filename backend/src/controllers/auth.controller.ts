@@ -49,6 +49,7 @@ export const AuthController = {
     } catch (err) { next(err); }
   },
 
+  
   /** POST /auth/logout */
   async logout(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
